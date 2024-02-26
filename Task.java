@@ -11,7 +11,8 @@ public class Task {
     public Date createdAt;
     public Date updatedAt;
 
-    public Task(int taskId, String title, String description, String status, int assigneeId, int creatorId, Date createdAt, Date updatedAt) {
+    public Task(int taskId, String title, String description, String status, int assigneeId, int creatorId,
+            Date createdAt, Date updatedAt) {
         this.taskId = taskId;
         this.title = title;
         this.description = description;

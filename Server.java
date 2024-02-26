@@ -10,7 +10,7 @@ class CDataBase{
     public CDataBase() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3308/db_tms?characterEncoding=utf8","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_tms?characterEncoding=utf8","root","");
             st = con.createStatement(); // Initialize statement only if connection is successful
         } catch(Exception e1) {
             System.out.println("CDataBase :"+e1);
